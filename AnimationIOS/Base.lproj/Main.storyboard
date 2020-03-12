@@ -15,19 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDh-1U-cqt">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDh-1U-cqt">
                                 <rect key="frame" x="20" y="20" width="335" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="5Zx-Si-ykz">
                                         <rect key="frame" x="25" y="25" width="285" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5Zx-Si-ykz" secondAttribute="height" multiplier="19:10" id="YCG-nz-nLf"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="5Zx-Si-ykz" firstAttribute="top" secondItem="xDh-1U-cqt" secondAttribute="top" constant="25" id="QtX-sn-MB3"/>
-                                    <constraint firstAttribute="bottom" secondItem="5Zx-Si-ykz" secondAttribute="bottom" constant="25" id="RAz-Og-4Wa"/>
-                                    <constraint firstAttribute="trailing" secondItem="5Zx-Si-ykz" secondAttribute="trailing" constant="25" id="hpC-oE-l84"/>
-                                    <constraint firstItem="5Zx-Si-ykz" firstAttribute="leading" secondItem="xDh-1U-cqt" secondAttribute="leading" constant="25" id="iy2-o6-IQW"/>
+                                    <constraint firstItem="5Zx-Si-ykz" firstAttribute="height" secondItem="xDh-1U-cqt" secondAttribute="height" multiplier="0.75" id="8Ol-Fg-4Hv"/>
+                                    <constraint firstItem="5Zx-Si-ykz" firstAttribute="centerX" secondItem="xDh-1U-cqt" secondAttribute="centerX" id="kle-B8-o2M"/>
+                                    <constraint firstItem="5Zx-Si-ykz" firstAttribute="centerY" secondItem="xDh-1U-cqt" secondAttribute="centerY" id="zsH-rD-bjZ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Gq-qy-Y1t">

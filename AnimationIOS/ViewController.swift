@@ -28,8 +28,13 @@ class ViewController: UIViewController {
         })
     }
     
+    private func zoomIn(){
+        UIView.animate(withDuration: 2, animations: {
+            self.image.transform = CGAffineTransform(scaleX: 2, y: 2)})
+    }
+    
     @IBAction func onFadeOutInPressed(_ sender: UIButton) {
-       fadeOutIn()
+       zoomIn()
     }
     
     private func fadeOut(){
@@ -43,4 +48,6 @@ class ViewController: UIViewController {
     }
     
 }
+
+
 
