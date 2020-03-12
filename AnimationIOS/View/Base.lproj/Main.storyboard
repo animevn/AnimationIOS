@@ -25,7 +25,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="5Zx-Si-ykz" firstAttribute="height" secondItem="xDh-1U-cqt" secondAttribute="height" multiplier="0.75" id="8Ol-Fg-4Hv"/>
                                     <constraint firstItem="5Zx-Si-ykz" firstAttribute="centerX" secondItem="xDh-1U-cqt" secondAttribute="centerX" id="kle-B8-o2M"/>
@@ -206,7 +206,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xDh-1U-cqt" secondAttribute="trailing" constant="20" id="39k-f4-aow"/>
                             <constraint firstItem="5Gq-qy-Y1t" firstAttribute="top" secondItem="xDh-1U-cqt" secondAttribute="bottom" constant="20" id="4m2-rG-Oub"/>

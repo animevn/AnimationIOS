@@ -9,7 +9,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.layer.borderColor = UIColor.red.cgColor
+        imageView.layer.borderColor = UIColor.black.cgColor
         imageView.layer.borderWidth = 0.5
         imageView.layer.cornerRadius = 10
     }
