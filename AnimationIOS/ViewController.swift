@@ -141,15 +141,77 @@ class ViewController: UIViewController {
         flash()
     }
     
+    private func rotateLeft(){
+        var count:Double = 0
+        (0...1).forEach{_ in
+            Timer.scheduledTimer(withTimeInterval: Double(count*2), repeats: false, block: {_ in
+                UIView.animate(withDuration: 0.5, delay: 0,
+                               options: UIView.AnimationOptions.curveLinear,
+                               animations: {
+                    self.image.transform = CGAffineTransform(rotationAngle: -CGFloat.pi/2)
+                }, completion: {_ in
+                    UIView.animate(withDuration: 0.5, delay: 0,
+                                   options: UIView.AnimationOptions.curveLinear,
+                                   animations: {
+                        self.image.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+                    }, completion: {_ in
+                        UIView.animate(withDuration: 0.5, delay: 0,
+                                       options: UIView.AnimationOptions.curveLinear,
+                                       animations: {
+                            self.image.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
+                        }, completion: {_ in
+                            UIView.animate(withDuration: 0.5, delay: 0,
+                                           options: UIView.AnimationOptions.curveLinear,
+                                           animations: {
+                                self.image.transform = CGAffineTransform(rotationAngle: 0)
+                            })
+                        })
+                    })
+                })
+            })
+            count += 1
+        }
+    }
+    
     @IBAction func onRotateLeftPressed(_ sender: UIButton) {
+        rotateLeft()
+    }
+    
+    private func rotateRight(){
+        var count:Double = 0
+        (0...1).forEach{_ in
+            Timer.scheduledTimer(withTimeInterval: Double(count*2), repeats: false, block: {_ in
+                UIView.animate(withDuration: 0.5, delay: 0,
+                               options: UIView.AnimationOptions.curveLinear,
+                               animations: {
+                    self.image.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
+                }, completion: {_ in
+                    UIView.animate(withDuration: 0.5, delay: 0,
+                                   options: UIView.AnimationOptions.curveLinear,
+                                   animations: {
+                        self.image.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+                    }, completion: {_ in
+                        UIView.animate(withDuration: 0.5, delay: 0,
+                                       options: UIView.AnimationOptions.curveLinear,
+                                       animations: {
+                            self.image.transform = CGAffineTransform(rotationAngle: -CGFloat.pi/2)
+                        }, completion: {_ in
+                            UIView.animate(withDuration: 0.5, delay: 0,
+                                           options: UIView.AnimationOptions.curveLinear,
+                                           animations: {
+                                self.image.transform = CGAffineTransform(rotationAngle: 0)
+                            })
+                        })
+                    })
+                })
+            })
+            count += 1
+        }
     }
     
     @IBAction func onRotateRightPressed(_ sender: UIButton) {
+        rotateRight()
     }
-    
-    
-    
-    
 }
 
 
