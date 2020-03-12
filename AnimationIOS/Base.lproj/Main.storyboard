@@ -71,17 +71,60 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FJG-4L-qxg">
+                                <rect key="frame" x="1" y="308" width="373" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4w-3i-bc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="66.5"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <state key="normal" title="Zoom In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onZoomInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRf-wN-M19"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBc-Ye-LPz">
+                                        <rect key="frame" x="124.5" y="0.0" width="124" height="66.5"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <state key="normal" title="Zoom Out In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onZoomOutInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfn-YW-nPr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX1-vh-l8g">
+                                        <rect key="frame" x="249.5" y="0.0" width="123.5" height="66.5"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <state key="normal" title="Zoom Out">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onZoomOutPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eY7-eR-6Yu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xDh-1U-cqt" secondAttribute="trailing" constant="20" id="39k-f4-aow"/>
                             <constraint firstItem="5Gq-qy-Y1t" firstAttribute="top" secondItem="xDh-1U-cqt" secondAttribute="bottom" constant="20" id="4m2-rG-Oub"/>
+                            <constraint firstItem="FJG-4L-qxg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="65I-Ri-Za6"/>
                             <constraint firstItem="xDh-1U-cqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8GL-U3-YyY"/>
                             <constraint firstItem="xDh-1U-cqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A2v-O2-hdM"/>
+                            <constraint firstItem="FJG-4L-qxg" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.1" id="G9s-MW-uTd"/>
                             <constraint firstItem="5Gq-qy-Y1t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="GL9-lY-Fz4"/>
                             <constraint firstItem="xDh-1U-cqt" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.3" id="H4r-a9-86R"/>
                             <constraint firstItem="5Gq-qy-Y1t" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.1" id="TYI-FS-l1V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Gq-qy-Y1t" secondAttribute="trailing" constant="1" id="a7u-Qw-BnJ"/>
+                            <constraint firstItem="FJG-4L-qxg" firstAttribute="top" secondItem="5Gq-qy-Y1t" secondAttribute="bottom" constant="1" id="shc-4m-c4j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FJG-4L-qxg" secondAttribute="trailing" constant="1" id="y0e-Wu-7Bi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
