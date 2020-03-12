@@ -2,10 +2,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var imageView: UIView!
     @IBOutlet weak var image: UIImageView!
     
     let model = Model()
+    
+    override func viewWillTransition(to size: CGSize,
+                                     with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: {_ in
+            let orientation = UIDevice.current.orientation
+            if orientation.isPortrait{
+                self.stackView.axis = .vertical
+            }
+            if orientation.isLandscape{
+                self.stackView.axis = .horizontal
+            }
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
